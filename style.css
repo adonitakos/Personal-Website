@@ -1,58 +1,29 @@
 .name {
+  font-size: 60px;
   text-align: center;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 70px;
-  letter-spacing: -0.2px;
-  word-spacing: 2px;
-  color: #FFFFFF;
-  font-weight: 700;
-  text-shadow: 3px 2px 5px #000000;
-  -webkit-text-stroke: 4px black;
-  background-color: #cccccc;
+  text-decoration: underline;
 }
 
 .profile_pic {
-  width: 500px;
+  width: 490px;
   float: right;
-  transform: translate(-20px, 0px);
+  transform: translate(-20px, -10px);
   border-radius: 10px;
   outline: 10px solid #000;
-  -webkit-box-shadow: 1px 4px 23px 13px rgba(0,0,0,0.36); 
+  webkit-box-shadow: 1px 4px 23px 13px rgba(0,0,0,0.36);
   box-shadow: 1px 4px 23px 13px rgba(0,0,0,0.36);
-  
-  
-}
-
-body {
-  background-image: url(images/Background.jpeg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 .introduction {
-  font-family: Arial;
-  font-size: 40px;
-  color: white;
-  transform: translate(12px, 0px);
-  line-height: 2.0;
-  text-shadow: 3px 5px 5px #000000;
-  -webkit-text-stroke: 2px black;
+  font-size: 35px;
 }
 
-
-.social {
-  font-family: Arial;
-  font-size: 40px;
-  color: white;
-  text-shadow: 3px 5px 5px #000000;
-  -webkit-text-stroke: 2px black;
-  text-indent: 10px;
+.GitHub {
+  text-indent: 100px;
 }
 
-.github_pic {
-  width: 150px;
+.github_icon {
+  width: 120px;
   border-radius: 500px;
   transform: translate(80px, 0px);
-  
 }
