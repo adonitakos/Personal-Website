@@ -1,0 +1,10 @@
+Hi, I'm Antonios.
+I'm a Junior at St. John's University in Queens studying Computer Science.
+My hobbies include gaming, media consumption, piano, and self-learning topics in the technology field
+
+
+
+<h2>Hi, I'm Antonios!</h2>
+    <h2>I'm a Junior at St. John's University in Queens studying Computer Science.</h2>
+    <h2> I am hoping to one day work in the field of Software Engineering, Data Science, or Information Technology</h2>
+    <h2>My hobbies include gaming, media consumption, piano, and self-learning topics in the technology field. </h2>
