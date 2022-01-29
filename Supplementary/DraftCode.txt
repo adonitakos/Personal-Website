@@ -1,0 +1,44 @@
+                          --------- HTML ---------
+   <!-- BIG line break -->
+   <script>
+     for(var x=0;x<=12;x++) { 
+      document.write("<br/>") 
+    }
+   </script> 
+  
+
+  <!-- GitHub -->
+   <h2 class = GitHub> <b> GitHub </b> </h2>
+   <a href="https://github.com/adonitakos" target = "github_icon"> 
+   <img class = "github_icon"
+   src="images/GitHub-Mark-120px-plus.png" 
+   title = "GitHub" 
+   > <!-- img tag ends here-->
+   
+   <hr/>
+
+
+                         --------- CSS ---------
+
+.GitHub {
+  text-indent: 100px;
+}
+
+.github_icon {
+  width: 120px;
+  border-radius: 500px;
+  transform: translate(80px, 0px);
+}
+
+.LinkedIn_title {
+  text-indent: 500px;
+  transform: translate(300px, -200px);
+}
+
+.linkedin_icon {
+  width: 120px;
+  transform: (translate(0px, 100px));
+}
+
+
+  
