@@ -1,132 +1,137 @@
 
 html,body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+background-color: rgba(0, 0, 0, 0.5);
+height: 950px;
 }
 
-/*--- Navigation Bar ---*/
+                            /*------------------ Navigation Bar ------------------*/
 .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
-  position: sticky;
-  top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
+position: sticky;
+top: 0;
+z-index: 1;
 }
 .navbar ul { /* Sizing */
-  display: flex;
-  list-style: none;
-  margin: 25px 0px;
+display: flex;
+list-style: none;
+margin: 25px 0px;
 }
 .navbar ul li {
-  font-family: century;
-  font-size: 2.1rem;
-  font-weight: bold;
+font-family: century;
+font-size: 2.1rem;
+font-weight: bold;
 }
 .navbar ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 8px 200px;
-  transition: all 0.5s ease;
+text-decoration: none;
+color: white;
+padding: 8px 250px;
+transition: all 0.5s ease;
 }
 .navbar ul li a:hover {
-  background-color: white;
-  color: black;
-  box-shadow: 0 0 10px white;
+background-color: white;
+color: black;
+box-shadow: 0 0 10px white;
 }
 
+                            /*------------------ Home ------------------*/
 #home {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 950px;
+display: flex;
+flex-direction: column;
+
+height: 950px;
 }
 #home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: url('../images/astoria_park.jpeg') no-repeat center center/cover;
-  height: 950px;
-  width: 100%;
-  z-index: -1;
-  justify-content: center;
-  align-items: center;
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+background: url('../images/astoria_park.jpeg') no-repeat center center/cover;
+height: 950px;
+width: 100%;
+z-index: -1;
+justify-content: center;
+align-items: center;
 }
 
-
-                              /* Antonios F. Takos */
 .name {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 100px;
-  text-align: center;
-  color: white;
-  text-shadow: -3px 11px 10px #000000;
-  transform: translateY(300px);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 100px;
+text-align: center;
+color: white;
+text-shadow: -3px 11px 10px #000000;
+transform: translate(15px, 290px);
 
 /* typewriter effect */
-  overflow: hidden;
-  border-right: 0.15em solid rgb(255, 255, 255);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
+overflow: hidden;
+border-right: 0.15em solid rgb(255, 255, 255);
+white-space: nowrap;
+margin: 0 auto;
+letter-spacing: 0.15em;
+animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+@keyframes typing {
+  from {
+    width: 0;
   }
-
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: rgb(255, 255, 255);
-    }
+  to {
+    width: 100%;
   }
+}
 
-
-  .profile_pic {
-    width: 600px;
-    float: left;
-    margin: 20px;
-    border-radius: 10px;
-    outline: 12.5px solid #000;
-    box-shadow: 1px 4px 23px 13px rgba(0,0,0,0.36);
-    transform: translateY(-60px);
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
-
-  .introduction {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  50% {
+    border-color: rgb(255, 255, 255);
   }
+}
 
-  .introduction h1 {
-    font-size: 80px;
-    color: white;
-    font-weight: bold;
-    text-shadow: -3px 11px 10px #000000;
-    transform: translateY(30px);
-    margin-left: 50%;
-  }
+                                      /*------------------ About Me ------------------*/
+.about {
+transform: translateY(150px);
+}
 
-  .introduction p {
-    font-size: 45px;
-    color: white;
-    font-weight: bold;
-    text-shadow: -3px 11px 10px #000000;
-    transform: translateY(30px);
-    margin-left: 37%;
-  }
+.profile_pic {
+  width: 600px;
+  float: left;
+  margin: 25px;
+  border-radius: 10px;
+  outline: 12.5px solid #000;
+  box-shadow: 1px 4px 23px 13px rgba(0,0,0,0.36);
+  transform: translateY(-60px);
+}
+
+.introduction {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.introduction h1 {
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+  text-shadow: -3px 11px 10px #000000;
+  margin-left: 50%;
+}
+
+.introduction p {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  text-shadow: -3px 11px 10px #000000;
+  transform: translate(-60px 30px);
+  margin-left: 37%;
+}
 
 
-
+                              /*------------------ Contact ------------------*/

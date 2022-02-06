@@ -16,8 +16,8 @@
   <!--Navigation Bar-->
   <nav class = "navbar"> 
     <ul>
-      <li><a href = "#">Home</a></li>
-      <li><a href = "#">About Me</a></li>
+      <li><a href = "#home">Home</a></li>
+      <li><a href = "#about_me">About Me</a></li>
       <li><a href = "#">Contact</a></li>
     </ul>
   </nav> <!--navbar div class ends here-->
@@ -27,14 +27,29 @@
       <h1 class = "name"> Antonios F. Takos </h1>
   </section>
 
+
+
   <!-- About Me-->
-  <section class = "about_me">
-    <img class = "profile_pic" src = "images/Profile.jpeg">
-    <div class = "introduction">
-      <h1>Hello, I'm Antonios</h1>
-      <p>I'm a Junior at St. John's University studying Computer Science. <br/> <br/>
-      Aspiring to one day work in the field of Software Engineering, Data Science, or Information Technology</p>
+  <section id = "about_me">
+    <div class = "about">
+      <img class = "profile_pic" src = "images/Profile.jpeg" alt = "Antonios F. Takos" title = "Antonios F. Takos">
+      <div class = "introduction">
+        <h1>Hello, I'm Antonios</h1>
+        <p>I'm a Junior at St. John's University studying Computer Science. <br/> <br/>
+        Aspiring to one day work in the field of Software Engineering, Data Science, or Information Technology.</p>
+      </div>
     </div>
+  </section>
+
+  <!-- BIG line break -->
+  <script>
+  for(var x=0;x<=20;x++) { 
+    document.write("<br/>") 
+  }
+  </script> 
+
+  <section id = "contact">
+    
   </section>
 
 
