@@ -1,10 +1,24 @@
-                          --------- HTML ---------
+                          ----------- HTML -----------
    <!-- BIG line break -->
    <script>
      for(var x=0;x<=12;x++) { 
       document.write("<br/>") 
     }
    </script> 
+
+     <!--Introduction-->
+     <div class = "introduction">
+        <h4>Hello, I'm Antonios</h4>
+        <p>I'm a Junior at St. John's University studying Computer Science.</p>
+        <p>Aspiring to one day work in the field of Software Engineering, Data Science, or Information Technology </p>  
+      </div> <!--introduction div class ends here-->
+
+     <!-- Profile Pic -->
+      <img class = "profile_pic"  
+      src="/images/Profile.jpeg" 
+      alt = "Antonios F. Takos" 
+      title = "Antonios F. Takos"
+      > <!--profile_pic img class ends here-->
   
 
   <!-- GitHub -->
@@ -18,27 +32,49 @@
    <hr/>
 
 
-                         --------- CSS ---------
+                         ----------- CSS -----------
 
-.GitHub {
-  text-indent: 100px;
+
+.profile_pic {
+  width: 500px;
+  float: right;
+  margin: 27px;
+  border-radius: 10px;
+  outline: 12.5px solid #000;
+  box-shadow: 1px 4px 23px 13px rgba(0,0,0,0.36);
 }
 
-.github_icon {
-  width: 120px;
-  border-radius: 500px;
-  transform: translate(80px, 0px);
+
+/*------ TypeWriter ------ */
+.typewriter h1 {
+  color: rgb(0, 0, 0);
+  font-size: monospace;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
-.LinkedIn_title {
-  text-indent: 500px;
-  transform: translate(300px, -200px);
-}
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
 
-.linkedin_icon {
-  width: 120px;
-  transform: (translate(0px, 100px));
-}
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
 
 
   
