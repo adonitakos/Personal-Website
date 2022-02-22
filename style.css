@@ -25,28 +25,28 @@ list-style: none;
 margin: 25px 0px;
 }
 .navbar ul li {
-font-family: century;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 2.1rem;
 font-weight: bold;
 }
 .navbar ul li a {
 text-decoration: none;
 color: white;
-padding: 8px 250px;
+padding: 9px 230px;
 transition: all 0.5s ease;
 }
 .navbar ul li a:hover {
 background-color: white;
 color: black;
 box-shadow: 0 0 10px white;
+border-radius: 3px;
 }
 
                             /*------------------ Home ------------------*/
 #home {
 display: flex;
 flex-direction: column;
-
-height: 950px;
+height: 1050px;
 }
 #home::before {
 content: "";
@@ -54,20 +54,21 @@ position: absolute;
 top: 0;
 right: 0;
 background: url('../images/astoria_park.jpeg') no-repeat center center/cover;
-height: 950px;
+height: 1050px;
 width: 100%;
 z-index: -1;
 justify-content: center;
 align-items: center;
 }
 
+
 .name {
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 100px;
+font-family: Tahoma;
+font-size: 115px;
 text-align: center;
 color: white;
 text-shadow: -3px 11px 10px #000000;
-transform: translate(15px, 290px);
+transform: translate(15px, 310px);
 
 /* typewriter effect */
 overflow: hidden;
@@ -99,7 +100,7 @@ animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
 
                                       /*------------------ About Me ------------------*/
 .about {
-transform: translateY(150px);
+transform: translateY(200px);
 }
 
 .profile_pic {
@@ -117,11 +118,11 @@ transform: translateY(150px);
 }
 
 .introduction h1 {
-  font-size: 80px;
+  font-size: 100px;
   color: white;
   font-weight: bold;
   text-shadow: -3px 11px 10px #000000;
-  margin-left: 50%;
+  margin-left: 45%;
 }
 
 .introduction p {
@@ -129,9 +130,31 @@ transform: translateY(150px);
   color: white;
   font-weight: bold;
   text-shadow: -3px 11px 10px #000000;
-  transform: translate(-60px 30px);
+  transform: translate(-20px, 20px);
   margin-left: 37%;
 }
 
-
                               /*------------------ Contact ------------------*/
+.contact h1 {
+  font-size: 140px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  transform: translateY(-370px);
+  color: white;
+  font-weight: bold;
+  text-shadow: -3px 11px 10px #000000;
+}
+
+.GitHub {
+  width: 200px;
+  transform: translate(50px,-300px);
+  background-color: white;
+  border-radius:100px;
+}
+
+.LinkedIn {
+  width: 200px;
+  transform: translate(600px,-300px);
+
+}
+

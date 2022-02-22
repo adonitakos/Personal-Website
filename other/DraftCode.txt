@@ -1,3 +1,10 @@
+The following is simple draft code that I can add to or copy from at any given moment
+
+This is great for when I feel a certain segment of code needs to be removed, but is important enough
+to hold onto just in case.
+
+
+
                           ----------- HTML -----------
    <!-- BIG line break -->
    <script>
