@@ -1,15 +1,13 @@
-
-html,body {
-width: 100%;
-height: 100%;
-margin: 0px;
-padding: 0px;
-overflow-x: hidden;
-background-color: rgba(0, 0, 0, 0.5);
-height: 950px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+ html, body {
+  background-color: rgba(0, 0, 0, 0.5);
+ }
 
-                            /*------------------ Navigation Bar ------------------*/
+                        /*------------------ Navigation Bar ------------------*/
 .navbar {
 display: flex;
 justify-content: center;
@@ -28,6 +26,7 @@ margin: 25px 0px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 2.1rem;
 font-weight: bold;
+white-space: nowrap;
 }
 .navbar ul li a {
 text-decoration: none;
@@ -44,7 +43,7 @@ border-radius: 3px;
 
                             /*------------------ Home ------------------*/
 #home {
-display: flex;
+display:flex;
 flex-direction: column;
 height: 1050px;
 }
@@ -54,13 +53,12 @@ position: absolute;
 top: 0;
 right: 0;
 background: url('../images/astoria_park.jpeg') no-repeat center center/cover;
-height: 1050px;
+height: 2080px;
 width: 100%;
 z-index: -1;
 justify-content: center;
 align-items: center;
 }
-
 
 .name {
 font-family: Tahoma;
@@ -100,7 +98,7 @@ animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
 
                                       /*------------------ About Me ------------------*/
 .about {
-transform: translateY(200px);
+transform: translateY(180px);
 }
 
 .profile_pic {
@@ -134,27 +132,34 @@ transform: translateY(200px);
   margin-left: 37%;
 }
 
-                              /*------------------ Contact ------------------*/
-.contact h1 {
-  font-size: 140px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-align: center;
-  transform: translateY(-370px);
-  color: white;
-  font-weight: bold;
-  text-shadow: -3px 11px 10px #000000;
-}
+                            /*------------------ Footer ------------------*/
+footer{
+background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
+padding-bottom: 10px;
 
-.GitHub {
-  width: 200px;
-  transform: translate(50px,-300px);
-  background-color: white;
-  border-radius:100px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: sticky;
+top: 0;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  margin: 25px 0px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 9px 140px;
+  transition: all 0.5s ease;
 }
 
 .LinkedIn {
-  width: 200px;
-  transform: translate(600px,-300px);
-
+  width: 150px;
+  transform: translateY(12px);
 }
 
+.GitHub {
+  width: 150px;
+}

@@ -1,9 +1,7 @@
-The following is simple draft code that I can add to or copy from at any given moment
+The following is simple draft code that I can copy-paste at any given moment
 
 This is great for when I feel a certain segment of code needs to be removed, but is important enough
 to hold onto just in case.
-
-
 
                           ----------- HTML -----------
    <!-- BIG line break -->
@@ -13,20 +11,29 @@ to hold onto just in case.
     }
    </script> 
 
-     <!--Introduction-->
-     <div class = "introduction">
-        <h4>Hello, I'm Antonios</h4>
-        <p>I'm a Junior at St. John's University studying Computer Science.</p>
-        <p>Aspiring to one day work in the field of Software Engineering, Data Science, or Information Technology </p>  
-      </div> <!--introduction div class ends here-->
+    <!--Introduction-->
+    <div class = "introduction">
+      <h4>Hello, I'm Antonios</h4>
+      <p>I'm a Junior at St. John's University studying Computer Science.</p>
+      <p>Aspiring to one day work in the field of Software Engineering, Data Science, or Information Technology </p>  
+    </div> <!--introduction div class ends here-->
 
-     <!-- Profile Pic -->
-      <img class = "profile_pic"  
-      src="/images/Profile.jpeg" 
-      alt = "Antonios F. Takos" 
-      title = "Antonios F. Takos"
-      > <!--profile_pic img class ends here-->
+    <!-- Profile Pic -->
+    <img class = "profile_pic"  
+    src="/images/Profile.jpeg" 
+    alt = "Antonios F. Takos" 
+    title = "Antonios F. Takos"
+    > <!--profile_pic img class ends here-->
   
+  <!--Navigation Bar-->
+  <nav class = "navbar"> 
+    <ul>
+      <li><a href = "#home">Home</a></li>
+      <li><a href = "#about_me">About Me</a></li>
+      <li><a href = "#contact_page">Contact</a></li>
+    </ul>
+  </nav> <!--navbar div class ends here-->
+
 
   <!-- GitHub -->
    <h2 class = GitHub> <b> GitHub </b> </h2>
@@ -38,9 +45,34 @@ to hold onto just in case.
    
    <hr/>
 
+    <section id = "contact_page">
+    <div class = "contact">
+      <h1><u>Contact</u></h1>
+      <div class="media_links">
+        <a href="https://github.com/adonitakos" target = "GitHub"> 
+        <img class = "GitHub" 
+        src = "images/GitHub-Mark-120px-plus.png" 
+        alt = "GitHub" title = "GitHub">
 
-                         ----------- CSS -----------
+        <a href="https://www.linkedin.com/in/antonios-f-takos/" target = "LinkedIn">
+        <img class = "LinkedIn"
+        src = "images/LI-Logo.png"
+        alt = "LinkedIn"
+        title = "LinkedIn">
+      </div> b b 
+    </div>
+  </section>
 
+---------------------------------- CSS ----------------------------------
+html,body {
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+background-color: rgba(0, 0, 0, 0.5);
+height: 950px;
+}
 
 .profile_pic {
   width: 500px;
@@ -83,5 +115,26 @@ to hold onto just in case.
     }
   }
 
+                             /*------------------ Contact ------------------*/
+.contact h1 {
+  font-size: 140px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  transform: translateY(-370px);
+  color: white;
+  font-weight: bold;
+  text-shadow: -3px 11px 10px #000000;
+}
 
+.GitHub {
+  width: 200px;
+  transform: translate(50px,-300px);
+  background-color: white;
+  border-radius:100px;
+}
+
+.LinkedIn {
+  width: 200px;
+  transform: translate(600px,-300px);
+}
   
