@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
  html, body {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
  }
-
+ 
                         /*------------------ Navigation Bar ------------------*/
 .navbar {
 display: flex;
@@ -15,7 +15,7 @@ align-items: center;
 background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
 position: sticky;
 top: 0;
-z-index: 1;
+z-index: 1; 
 }
 .navbar ul { /* Sizing */
 display: flex;
@@ -31,7 +31,7 @@ white-space: nowrap;
 .navbar ul li a {
 text-decoration: none;
 color: white;
-padding: 9px 230px;
+padding: 9px 220px;
 transition: all 0.5s ease;
 }
 .navbar ul li a:hover {
@@ -70,11 +70,11 @@ transform: translate(15px, 310px);
 
 /* typewriter effect */
 overflow: hidden;
-border-right: 0.15em solid rgb(255, 255, 255);
+border-right: 0.15em solid white;
 white-space: nowrap;
 margin: 0 auto;
 letter-spacing: 0.15em;
-animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
+animation: typing 2.5s steps(40, end), blink-caret 0.65s step-end forwards;
 }
 
 @keyframes typing {
@@ -135,7 +135,7 @@ transform: translateY(180px);
                             /*------------------ Footer ------------------*/
 footer{
 background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
-padding-bottom: 10px;
+padding-bottom: 8px;
 
 display: flex;
 justify-content: center;
@@ -146,20 +146,21 @@ top: 0;
 footer ul {
   display: flex;
   list-style: none;
-  margin: 25px 0px;
+  margin: 8px 0px;
 }
 footer ul li a {
   text-decoration: none;
   color: white;
-  padding: 9px 140px;
+  padding: 9px 200px;
   transition: all 0.5s ease;
 }
 
 .LinkedIn {
-  width: 150px;
+  width: 80px;
   transform: translateY(12px);
 }
 
 .GitHub {
-  width: 150px;
+  width: 80px;
+  transform: translateY(5px);
 }
