@@ -1,2 +1,2 @@
 # Personal Website
-![image](https://user-images.githubusercontent.com/56283137/153910409-1fc486f6-244c-45e8-be8a-9aa81a1eccad.png)
+<img width="941" alt="image" src="https://user-images.githubusercontent.com/56283137/155852572-e980bd85-943c-4083-8fea-645c7b5f0c24.png">
