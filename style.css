@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
  html, body {
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.58);
  }
  
                         /*------------------ Navigation Bar ------------------*/
@@ -20,7 +20,7 @@ z-index: 1;
 .navbar ul { /* Sizing */
 display: flex;
 list-style: none;
-margin: 25px 0px;
+margin: 20px 0px;
 }
 .navbar ul li {
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -31,7 +31,7 @@ white-space: nowrap;
 .navbar ul li a {
 text-decoration: none;
 color: white;
-padding: 9px 220px;
+padding: 9px 250px;
 transition: all 0.5s ease;
 }
 .navbar ul li a:hover {
@@ -43,7 +43,7 @@ border-radius: 3px;
 
                             /*------------------ Home ------------------*/
 #home {
-display:flex;
+display: flex;
 flex-direction: column;
 height: 1050px;
 }
@@ -135,32 +135,23 @@ transform: translateY(180px);
                             /*------------------ Footer ------------------*/
 footer{
 background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
-padding-bottom: 8px;
-
 display: flex;
 justify-content: center;
 align-items: center;
 position: sticky;
 top: 0;
 }
-footer ul {
-  display: flex;
-  list-style: none;
-  margin: 8px 0px;
-}
-footer ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 9px 200px;
-  transition: all 0.5s ease;
-}
 
-.LinkedIn {
-  width: 80px;
-  transform: translateY(12px);
+.social{
+	display: flex;
 }
-
-.GitHub {
-  width: 80px;
-  transform: translateY(5px);
+.social a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 16px 100px;
+	color: white;
+	text-decoration: none;
+	font-size: 51px;
 }
