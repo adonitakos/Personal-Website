@@ -120,7 +120,8 @@ transform: translateY(180px);
   color: white;
   font-weight: bold;
   text-shadow: -3px 11px 10px #000000;
-  margin-left: 45%;
+  margin-left: 54%;
+  padding-bottom: 50px;
 }
 
 .introduction p {
