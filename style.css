@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.58);
  }
  
-                        /*------------------ Navigation Bar ------------------*/
+           /*------------------ Navigation Bar ------------------*/
 .navbar {
 display: flex;
 justify-content: center;
@@ -41,7 +41,7 @@ box-shadow: 0 0 10px white;
 border-radius: 3px;
 }
 
-                            /*------------------ Home ------------------*/
+                /*------------------ Home ------------------*/
 #home {
 display: flex;
 flex-direction: column;
@@ -53,7 +53,7 @@ position: absolute;
 top: 0;
 right: 0;
 background: url('../images/astoria_park.jpeg') no-repeat center center/cover;
-height: 2200px;
+height: 2190px;
 width: 100%;
 z-index: -1;
 justify-content: center;
@@ -100,11 +100,10 @@ animation: typing 2.5s steps(40, end), blink-caret 0.65s step-end forwards;
 .about {
 transform: translateY(180px);
 }
-
 .profile_pic {
   width: 600px;
   float: left;
-  margin: 25px;
+  margin: 20px;
   border-radius: 10px;
   outline: 12.5px solid #000;
   box-shadow: 1px 4px 23px 13px rgba(0,0,0,0.36);
@@ -114,23 +113,23 @@ transform: translateY(180px);
 .introduction {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .introduction h1 {
+  display: grid;
+  place-items: center; /* centering header */
   font-size: 100px;
   color: white;
   font-weight: bold;
   text-shadow: -3px 11px 10px #000000;
-  margin-left: 54%;
   padding-bottom: 50px;
 }
-
 .introduction p {
+  display: grid;
+  place-items: center;
   font-size: 45px;
   color: white;
   font-weight: bold;
   text-shadow: -3px 11px 10px #000000;
-  transform: translate(-20px, 20px);
-  margin-left: 37%;
+  margin-left: 36%;
 }
 
                             /*------------------ Footer ------------------*/
@@ -139,17 +138,16 @@ background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600f
 display: flex;
 justify-content: center;
 align-items: center;
-position: sticky;
-top: 0;
+position: absolute;
+width: 100%;
+height: 4.0rem;
 }
-
 .social{
 	display: flex;
 }
 .social a{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+  place-items: center;
 	border-radius: 50%;
 	margin: 16px 100px;
 	color: white;
