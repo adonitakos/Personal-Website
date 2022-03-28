@@ -3,17 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
- html, body {
+
+html,body
+{
+  margin: 0;
+  overflow-x: hidden;
+  margin-right: 0;
+  border-right: 0;
+  padding-right: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  zoom: 80%;
+  vertical-align: baseline; 
   background-color: rgba(0, 0, 0, 0.58);
- }
- 
+}
+
            /*------------------ Navigation Bar ------------------*/
 .navbar {
 display: flex;
 justify-content: center;
 align-items: center;
+position: relative;
 background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
-position: sticky;
 top: 0;
 z-index: 1; 
 }
@@ -84,7 +96,7 @@ animation: typing 2.5s steps(40, end), blink-caret 0.65s step-end forwards;
   to {
     width: 100%;
   }
-}
+} /
 
 @keyframes blink-caret {
   from,
@@ -138,9 +150,12 @@ background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600f
 display: flex;
 justify-content: center;
 align-items: center;
-position: absolute;
 width: 100%;
-height: 4.0rem;
+height: 4.6rem;
+overflow: hidden;
+position: relative;
+bottom: 0;
+width: 100%;
 }
 .social{
 	display: flex;
