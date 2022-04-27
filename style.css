@@ -14,79 +14,79 @@ html,body
   padding: 0;
   border: 0;
   outline: 0;
-  zoom: 80%;
+  zoom: 112%;
   vertical-align: baseline; 
   background-color: rgba(0, 0, 0, 0.58);
 }
 
            /*------------------ Navigation Bar ------------------*/
 .navbar {
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
-top: 0;
-z-index: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
+  top: 0;
+  z-index: 1; 
 }
 .navbar ul { /* Sizing */
-display: flex;
-list-style: none;
-margin: 20px 0px;
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
 }
 .navbar ul li {
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 2.1rem;
-font-weight: bold;
-white-space: nowrap;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  white-space: nowrap;
 }
 .navbar ul li a {
-text-decoration: none;
-color: white;
-padding: 9px 250px;
-transition: all 0.5s ease;
+  text-decoration: none;
+  color: white;
+  padding: 9px 250px;
+  transition: all 0.5s ease;
 }
 .navbar ul li a:hover {
-background-color: white;
-color: black;
-box-shadow: 0 0 10px white;
-border-radius: 3px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+  border-radius: 3px;
 }
 
                 /*------------------ Home ------------------*/
 #home {
-display: flex;
-flex-direction: column;
-height: 1050px;
+  display: flex;
+  flex-direction: column;
+  height: 1050px;
 }
 #home::before {
-content: "";
-position: absolute;
-top: 0;
-right: 0;
-background: url('../images/astoria_park.jpeg') no-repeat center center/cover;
-height: 2190px;
-width: 100%;
-z-index: -1;
-justify-content: center;
-align-items: center;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('../images/astoria_park.jpeg') no-repeat center center/cover;
+  height: 2400px;
+  width: 100%;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
 }
 
 .name {
-font-family: Tahoma;
-font-size: 115px;
-text-align: center;
-color: white;
-text-shadow: -3px 11px 10px #000000;
-transform: translate(15px, 310px);
+  font-family: Tahoma;
+  font-size: 115px;
+  text-align: center;
+  color: white;
+  text-shadow: -3px 11px 10px #000000;
+  transform: translate(15px, 310px);
 
-/* typewriter effect */
-overflow: hidden;
-border-right: 0.15em solid white;
-white-space: nowrap;
-margin: 0 auto;
-letter-spacing: 0.15em;
-animation: typing 2.5s steps(40, end), blink-caret 0.65s step-end forwards;
+  /* typewriter effect */
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 2.5s steps(40, end), blink-caret 0.65s step-end forwards;
 }
 
 @keyframes typing {
@@ -96,7 +96,7 @@ animation: typing 2.5s steps(40, end), blink-caret 0.65s step-end forwards;
   to {
     width: 100%;
   }
-} /
+} 
 
 @keyframes blink-caret {
   from,
@@ -110,7 +110,7 @@ animation: typing 2.5s steps(40, end), blink-caret 0.65s step-end forwards;
 
                                       /*------------------ About Me ------------------*/
 .about {
-transform: translateY(180px);
+  transform: translateY(120px);
 }
 .profile_pic {
   width: 600px;
@@ -124,6 +124,7 @@ transform: translateY(180px);
 
 .introduction {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transform: translateY(-3.5rem);
 }
 .introduction h1 {
   display: grid;
@@ -141,21 +142,25 @@ transform: translateY(180px);
   color: white;
   font-weight: bold;
   text-shadow: -3px 11px 10px #000000;
-  margin-left: 36%;
+  margin-left: 38%;
 }
 
                             /*------------------ Footer ------------------*/
 footer{
-background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 4.6rem;
-overflow: hidden;
-position: relative;
-bottom: 0;
-width: 100%;
+  background: linear-gradient(314deg, #0023e6 0%, #8600ff 25%, #0023e6 50%, #8600ff 75%, #0023e6 100%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 0px;
+  position: absolute;
+  left: 0;
+  bottom: -100rem;
+  width: 100%;
+
+  text-align: center;
 }
 .social{
 	display: flex;
@@ -168,4 +173,20 @@ width: 100%;
 	color: white;
 	text-decoration: none;
 	font-size: 51px;
+}
+
+.social a :hover{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+@media all and (min-width: 759.11px)
+{
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    zoom: 90%
+  }
 }
