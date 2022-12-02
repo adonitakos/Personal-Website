@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoni's Website</title>
+
+<!--Important Links and Scripts-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SourceCodePro">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body class = "about_page">
+   <header>
+      <nav>
+         <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+         </div>
+         <div class="logo">
+            <a href="../index.html">
+            <img src="../images/AT.png">
+            </a>
+         </div>
+         <div class="menu">
+            <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="/pages/about.html">About</a></li>
+               <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+   <section id="contact-form">
+    <h1 id="contact_banner">Contact Me</h1>
+    <form action="https://formsubmit.co/antoniostakos@gmail.com" method="POST">      
+        <input name="name" type="text" class="feedback-input" placeholder="Name"/>   
+        <!-- <input name="email" type="text" class="feedback-input" placeholder="Email" /> -->
+        <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+        <input type="submit" value="SUBMIT" onsubmit="sendMail()"/>
+    </form>
+
+
+    <div class="container-fluid" id="icons">
+      <div class="row">
+         <div class="col">
+            <a href="https://www.linkedin.com/in/antonios-f-takos/">
+               <i class="fa-brands fa-linkedin"></i>
+            </a>
+            </div>
+            <div class="col">
+               <a href="https://github.com/adonitakos">
+                  <i class="fa-brands fa-square-github"></i>
+               </a>
+            </div>
+         </div>
+         
+      </div>
+    </div>
+
+
+
+   </section>
+   

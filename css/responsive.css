@@ -1,0 +1,57 @@
+@media (-webkit-device-pixel-ratio: 1.25) {
+    * {
+      zoom: 0.965;
+    }
+  }
+  
+  
+@media (-webkit-device-pixel-ratio: 1.50) {
+    * {
+        zoom: 0.95;
+    }
+
+    #name {
+        transform: translateY(10rem);
+        font-size: 8rem;
+    }
+
+
+
+} /*@media 1.50 ends here*/
+
+
+@media only screen and (max-width: 360px) {
+  .typing-demo h1 {
+    font-size: 2.5rem;
+    animation: none;
+    white-space:unset;
+    border-right: 0px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  li a {
+    display: none;
+  }
+
+  .menu {
+    height: 1rem;
+  }
+
+  .logo {
+    transform: translateX(29%);
+    width: 29.5rem;
+    transform: translateY(3rem);
+  }
+
+  .menu-icon {
+    display: block;
+    padding-right: 2rem;
+    background: none;
+  }
+
+
+
+}

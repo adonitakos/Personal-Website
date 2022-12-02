@@ -1,0 +1,263 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Poppins",sans-serif;
+    font-weight: lighter;
+    color: white;
+    background-color: rgb(43, 39, 39);
+}
+
+header {
+    width: 100%;
+    height: 1vh;
+    background-size: cover;
+    background-color: aquamarine;
+}
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 7px 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.logo img {
+    width: 15%;
+}
+
+.logo img:hover {
+    transform: scale(0.90);
+    box-shadow: 0 0 10px rgb(112, 3, 236);
+    box-shadow: linear-gradient(90deg, rgb(180, 228, 238) 0%, rgba(238,252,255,1) 50%, rgba(180, 228, 238) 100%);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 8%, rgba(9,9,121,1) 30%, rgb(11, 115, 156) 100%);
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li:hover {
+   border-radius: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;    
+    font-size: 21px;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.content {
+    margin-top: 10rem;
+}
+
+/* -------------------- Home -------------------- */
+
+.wrapper {
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+  
+.typing-demo h1 {
+    width: 19.35ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 10rem;
+    font-weight: 700;
+    letter-spacing: 0.8rem;
+    transform: translateY(4rem);
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+}
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  } 
+
+/* -------------------- About -------------------- */
+
+.About {
+    margin-top: 8rem;
+}
+
+#ProfileCard {
+    display: grid;
+    place-items: center;
+}
+
+#ProfileCard h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#ProfileCard p {
+   text-align: center;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.ProfilePic {
+    width: 50%;
+    border-radius: 10px;
+    border: 3px solid rgb(4, 84, 175);
+}
+
+#Education {
+    margin-top: 3rem;
+}
+
+#Projects h2 {
+    text-decoration: none;
+    color: white;
+}
+
+#Projects table td a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*--------------- Contact ---------------*/
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700); */
+
+#contact_banner {
+    color: white;
+    max-width: 550px; 
+    margin: 10rem auto; 
+    margin-bottom: -1px;
+    display: grid;
+    place-content: center;
+    font-weight: 800;
+}
+
+form { 
+    max-width: 550px; 
+    margin: 3rem auto; 
+    display: grid;
+    place-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #0073ff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { 
+    border:2px solid #0073ff; 
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#0073ff;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+[type="submit"]:hover { 
+    background:#0016d8; 
+}
+
+#icons {
+    display: grid;
+    place-content: center;
+    margin-top: 2rem;
+    font-size: 50px;
+    color: inherit;
+}
