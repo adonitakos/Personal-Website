@@ -112,6 +112,11 @@ nav ul li a:hover {
 
 /* -------------------- Home -------------------- */
 
+.home_body {
+    background: url(../images/astoria_park.jpeg) no-repeat 50% 15%; */
+}
+
+
 .wrapper {
     height: 90vh;
     display: grid;
