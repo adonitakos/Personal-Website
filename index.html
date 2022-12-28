@@ -17,37 +17,43 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SourceCodePro">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body class="home_body">
-   <header>
-      <nav>
-         <div class="menu-icon">
-            <i class="fa fa-bars fa-2x"></i>
-         </div>
-         <div class="logo">
+    <nav class = "navbar">
+        <div>
             <a href="./index.html">
-            <img src="images/AT.png">
+                <img class="logo" src="./images/AT.png">
             </a>
-         </div>
-         <div class="menu">
-            <ul>
-               <li><a href="#Main_Page">Home</a></li>
-               <li><a href="./pages/about.html">About</a></li>
-               <li><a href="./pages/contact.html">Contact</a></li>
-            </ul>
-         </div>
-      </nav>
-   </header>
+        </div>
+        <ul class="nav-list" id="navi-list">
+            <li class = "list-item">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class = "list-item">
+                <a href="./pages/about.html">About</a>
+            </li>
+            <li class = "list-item">
+                <a href="./pages/contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    
    <section class = "Main_Page">
       <div class="wrapper">
          <div class="typing-demo">
-              <h1 id="name">Antonios F. Takos</h1>
+            <h1 id="name">Antonios F. Takos</h1>
+            <h1 id="mobile_name">Antonios <br> F. <br> Takos</h1>
          </div>
       </div>
    </section>
 
+   <script src="script.js"></script>
 </body>
 </html>

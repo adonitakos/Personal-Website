@@ -15,29 +15,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SourceCodePro">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <script src="../script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body class = "about_page">
-   <header>
-      <nav>
-         <div class="menu-icon">
-            <i class="fa fa-bars fa-2x"></i>
-         </div>
-         <div class="logo">
-            <a href="../index.html">
-            <img src="../images/AT.png">
-            </a>
-         </div>
-         <div class="menu">
-            <ul>
-               <li><a href="../index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="contact.html">Contact</a>
-         </div>
-      </nav>
-   </header>
+  <nav class = "navbar">
+    <div>
+        <a href="../index.html">
+            <img class="logo" src="../images/AT.png">
+        </a>
+    </div>
+    <ul class="nav-list" id="navi-list">
+        <li class = "list-item">
+            <a href="../index.html">Home</a>
+        </li>
+        <li class = "list-item">
+            <a href="../pages/about.html">About</a>
+        </li>
+        <li class = "list-item">
+            <a href="../pages/contact.html">Contact</a>
+        </li>
+    </ul>
+    <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+</nav>
    
 <section class="About">
 <!--1-->
@@ -153,6 +157,10 @@
           <td>A script I wrote for my univeristy's (SJU) course registration portal using Python and the Selenium web framework</td>
         </tr>
         <tr>
+          <td><a href="https://github.com/adonitakos/Discord-GPT" target="_blank">Discord-GPT</a></td>
+          <td>A Discord bot that uses the OpenAI API, so that users may query the GPT-3 model directly from Discord text channels </td>
+        </tr>
+        <tr>
           <td><a href="https://github.com/adonitakos/Adonis-AHK-scripts" target="_blank">AHK Scripts</a></td>
           <td>Personal AutoHotkey macro scripts that I use on a daily basis to speed up my computing a bit</td>
         </tr>
@@ -163,15 +171,9 @@
   
       </tbody>
     </table>
+  </section>
+  <hr>
 </section>
-<hr>
-
-</section>
-
-
-
-   
-
-
+<script src="../script.js"></script>
 </body>
 </html>

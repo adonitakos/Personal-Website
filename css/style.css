@@ -1,7 +1,7 @@
-html, body {
-    margin: 0;
+* {
+    box-sizing: border-box;
     padding: 0;
-    width: 100%;
+    margin: 0;
 }
 
 body {
@@ -10,120 +10,76 @@ body {
     color: white;
     background-color: rgb(43, 39, 39);
 }
-
-header {
-    width: 100%;
-    height: 1vh;
-    background-size: cover;
-    background-color: aquamarine;
-}
-
-.content {
-    width: 94%;
-    margin: 4em auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
+/* ----------------- Navbar -----------------*/
+.navbar {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 8%, rgba(9,9,121,1) 30%, rgb(11, 115, 156) 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 700;
 }
 
 .logo {
-    line-height: 60px;
-    position: fixed;
-    float: left;
-    margin: 7px 30px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
+    width: 16%;
+    margin-left: 30px;
 }
 
-.logo img {
-    width: 15%;
-}
-
-.logo img:hover {
+.logo:hover {
     transform: scale(0.90);
     box-shadow: 0 0 10px rgb(112, 3, 236);
     box-shadow: linear-gradient(90deg, rgb(180, 228, 238) 0%, rgba(238,252,255,1) 50%, rgba(180, 228, 238) 100%);
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    line-height: 60px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 8%, rgba(9,9,121,1) 30%, rgb(11, 115, 156) 100%);
+.nav-list {
+    list-style-type: none;
+    margin-right: 10px;
+    font-family: "Poppins",sans-serif;
 }
 
-nav ul {
-    line-height: 60px;
-    list-style: none;
-    background: rgba(0, 0, 0, 0);
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-    padding-right: 40px;
-    transition: 1s;
-}
-
-nav.black ul {
-    background: #000;
-}
-
-nav ul li {
+.nav-list .list-item {
     display: inline-block;
-    padding: 16px 40px;;
+    padding: 10px 40px;
+    margin-top: 15px;
 }
 
-nav ul li:hover {
-   border-radius: 10px;
-}
-
-nav ul li a {
+.navbar a {
+    color: white;
     text-decoration: none;
-    color: #fff;    
-    font-size: 21px;
-    font-weight: 700;
 }
 
-nav ul li a:hover {
+.navbar a:hover {
     text-decoration: none;
     font-size: 20px;
     color:white;
 }
 
-.menu-icon {
-    line-height: 60px;
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
+.menu {
     display: none;
 }
 
-.content {
-    margin-top: 10rem;
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
 }
 
 /* -------------------- Home -------------------- */
 
 .home_body {
-    background: url(../images/astoria_park.jpeg) no-repeat 50% 15%; */
+    background: url(../images/astoria_park.jpeg) no-repeat 50% 15%; 
 }
 
-
 .wrapper {
-    height: 90vh;
+    height: 65vh;
     display: grid;
     place-items: center;
 }
   
-.typing-demo h1 {
+#name {
     width: 19.35ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -135,6 +91,10 @@ nav ul li a:hover {
     letter-spacing: 0.8rem;
     transform: translateY(4rem);
     text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+}
+
+#mobile_name {
+    display: none;
 }
   
   @keyframes typing {
@@ -152,7 +112,7 @@ nav ul li a:hover {
 /* -------------------- About -------------------- */
 
 .About {
-    margin-top: 8rem;
+    margin-top: 3rem;
 }
 
 #ProfileCard {

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SourceCodePro">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <script src="script.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -23,26 +23,30 @@
 </head>
 
 <body class = "about_page">
-   <header>
-      <nav>
-         <div class="menu-icon">
-            <i class="fa fa-bars fa-2x"></i>
-         </div>
-         <div class="logo">
-            <a href="../index.html">
-            <img src="../images/AT.png">
-            </a>
-         </div>
-         <div class="menu">
-            <ul>
-               <li><a href="../index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="contact.html">Contact</a></li>
-            </ul>
-         </div>
-      </nav>
-   </header>
-
+   <nav class = "navbar">
+      <div>
+          <a href="../index.html">
+              <img class="logo" src="../images/AT.png">
+          </a>
+      </div>
+      <ul class="nav-list" id="navi-list">
+          <li class = "list-item">
+              <a href="../index.html">Home</a>
+          </li>
+          <li class = "list-item">
+              <a href="../pages/about.html">About</a>
+          </li>
+          <li class = "list-item">
+              <a href="../pages/contact.html">Contact</a>
+          </li>
+      </ul>
+      <div class="menu" id="toggle-button">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+      </div>
+  </nav>
+  
    <section id="contact-form">
     <h1 id="contact_banner">Contact Me</h1>
     <form action="https://formsubmit.co/antoniostakos@gmail.com" method="POST">      
@@ -51,8 +55,7 @@
         <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
         <input type="submit" value="SUBMIT" onsubmit="sendMail()"/>
     </form>
-
-
+    
     <div class="container-fluid" id="icons">
       <div class="row">
          <div class="col">
@@ -69,8 +72,8 @@
          
       </div>
     </div>
-
-
-
    </section>
-   
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,6 @@
     }
   }
   
-  
 @media (-webkit-device-pixel-ratio: 1.50) {
     * {
         zoom: 0.95;
@@ -15,43 +14,95 @@
         font-size: 8rem;
     }
 
-
-
 } /*@media 1.50 ends here*/
 
 
-@media only screen and (max-width: 360px) {
-  .typing-demo h1 {
-    font-size: 2.5rem;
-    animation: none;
-    white-space:unset;
-    border-right: 0px;
-    display: grid;
-    place-items: center;
-    align-items: center;
-    text-align: center;
+@media all and (max-width: 480px) {
+
+  .logo {
+      margin-top: 10px;
+      margin-bottom: 9px;
   }
 
-  li a {
-    display: none;
+  .navbar {
+      justify-content: space-around;
+      flex-direction: column;
+  }
+
+  .nav-list {
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+      display: none;
+      margin-right: -5px;
+  }
+
+  .nav-list .list-item {
+      display: block;
+      border-top: 1px solid white;
   }
 
   .menu {
-    height: 1rem;
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 35px;
   }
 
-  .logo {
-    transform: translateX(29%);
-    width: 29.5rem;
-    transform: translateY(3rem);
+  .active {
+      display: block;
   }
 
-  .menu-icon {
+  .home_body {
+    background: url(../images/astoria_park_MOBILE.jpeg) no-repeat 50% 15%; 
+  }
+
+  #name {
+    display: none;
+  }
+
+  #mobile_name {
+    width: 11ch;
     display: block;
-    padding-right: 2rem;
-    background: none;
+    text-align: center;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.7rem;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   }
 
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  } 
 
+  
 
-}
+  #ProfileCard h1 {
+    text-align: center;
+  }
+
+  #Education, #Work_Experience, #Programming_Skills h2,
+  #General_Interests, #Projects h2
+  {
+    padding-left: 8px;
+  }
+
+  #contact-form {
+    margin-top: -3rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+} /* <--- @media query ends here*/
