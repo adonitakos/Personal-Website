@@ -18,6 +18,16 @@
 
 
 @media all and (max-width: 480px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+
+  body, html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
 
   .logo {
       margin-top: 10px;
@@ -27,6 +37,7 @@
   .navbar {
       justify-content: space-around;
       flex-direction: column;
+      width: 100%;
   }
 
   .nav-list {
@@ -55,6 +66,7 @@
 
   .home_body {
     background: url(../images/astoria_park_MOBILE.jpeg) no-repeat 50% 15%; 
+    overflow-x: hidden;
   }
 
   #name {
@@ -100,7 +112,7 @@
   }
 
   #contact-form {
-    margin-top: -3rem;
+    margin-top: -4rem;
     padding-left: 15px;
     padding-right: 15px;
   }

@@ -154,6 +154,10 @@ body {
 /*--------------- Contact ---------------*/
 /* @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700); */
 
+#contact-form {
+    margin-top: -5rem;
+}
+
 #contact_banner {
     color: white;
     max-width: 550px; 
